@@ -1,0 +1,172 @@
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    padding: 50px;
+    font-family: sans-serif;
+    background: linear-gradient(to right, #f93d66, #6d47d9);
+}
+@-webkit-keyframes facebook {
+    0% {left:-80%;}
+    25% {right: 70%;}
+    50% {top: 90%;}
+    100% {bottom: 60%;}
+}
+.facebook {
+   position: absolute;
+   -webkit-animation: facebook 7s;
+    -webkit-animation-iteration-count:infinite ;
+}
+@-webkit-keyframes instagram {
+    0% {right: -80%;}
+    25% {left: 70%;}
+    50% {bottom: 90%;}
+    100% {top: 60%;}
+}
+.instagram {
+   position: absolute;
+   -webkit-animation: instagram 7s;
+    -webkit-animation-iteration-count:infinite ;
+}
+@-webkit-keyframes twitter { 
+    0% {top: -80%;}
+    25% {bottom: 70%;}
+    50% {right: 90%;}
+    100% {left: 60%;}
+}
+.twitter {
+   position: absolute;
+   -webkit-animation: twitter 7s;
+    -webkit-animation-iteration-count:infinite ;
+}
+@-webkit-keyframes github{
+    0% {bottom: -80%;}
+    25% {top: 70%;}
+    50% {left: 90%;}
+    100% {right: 60%;}
+}
+.github {
+   position: absolute;
+   -webkit-animation: github 7s;
+    -webkit-animation-iteration-count:infinite ;
+}
+ul
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+li
+{
+    list-style: none;
+    margin: 20px 50px;
+    width: 70px;
+    height: 70px;
+    transform: rotate(-30deg) skewX(25deg) translate(0, 0);
+    transition: 0.6s;
+    box-shadow: -20px 20px 10px gray;
+}
+li a
+{
+    border-radius: 10%;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: 0.6s;
+    background-color: white;
+    box-shadow: -20px 20px 10px gray;
+}
+ul li a span
+{
+    width: 100%;
+    height: 100%;
+    font-size: 4rem;
+    text-align: center;
+    transition-duration: 0.6s;
+}
+ul li a:before
+{
+    content: "";
+    transform: skewY(-45deg);
+    height: 100%;
+    width: 17.5px;
+    position: absolute;
+    top: 9px;
+    left: -17px;
+    background-color: rgb(204, 201, 201);
+    transform: 0.6;
+}
+ul li a:after
+{
+    content: "";
+    transform: skewX(-45deg);
+    height: 19px;
+    width: 100%;
+    position: absolute;
+    bottom: -17px;
+    left: -9px;
+    background-color: rgb(204, 201, 201);
+    transform: 0.6;
+}
+ul li a:hover
+{
+  transform: translate(19px, -18px);  
+  box-shadow: -60px 60px 60px gray;
+}
+.fb span
+{
+    color: rgb(58, 126, 204);
+    text-align: center;
+    font-size: 70px;
+}
+a span:hover
+{
+    color: white;
+}
+.fb span:hover
+{
+    background-color: rgb(58, 126, 204);
+}
+.insta span
+{
+    color: rgb(241, 91, 80);
+    text-align: center;
+    font-size: 70px;
+}
+.insta span:hover
+{
+    background: linear-gradient(
+        to bottom,
+        rgb(153, 46, 64),
+        rgb(248, 5, 46),
+        rgb(255, 187, 0)
+    );
+}
+.twitter span
+{
+    background-color: #f9fcfd;
+    text-align: center;
+    color: rgb(65, 173, 236);
+    font-size: 70px;
+}
+.twitter span:hover
+{
+    background-color: rgb(65, 161, 216);
+}
+.git span
+{
+    background-color: rgb(240, 250, 245);
+    text-align: center;
+    font-size: 70px;
+    color: black;
+}
+.git span:hover
+{
+    background-color: rgb(16, 17, 17);
+}
+
